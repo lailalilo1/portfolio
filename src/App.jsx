@@ -57,9 +57,9 @@ function ProjectCard({ p, onZoom }) {
       )}
 
       {p.videos?.map((v) => (
-        <video key={v} src={v} controls preload="metadata"
+         <video key={v} src={v} controls muted playsInline preload="metadata"
           style={{ width: "100%", borderRadius: 10 }} />
-      ))}
+        ))} 
 
       {(p.demo || p.video || p.code) && (
         <div className="lnk">
