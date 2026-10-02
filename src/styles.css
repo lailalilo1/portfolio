@@ -5,7 +5,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
 h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;margin:0;line-height:1.1}
 a{color:inherit}:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.w{max-width:1040px;margin:0 auto;padding:0 24px}
+.w{max-width:1480px;margin:0 auto;padding:0 60px}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
 nav{display:flex;justify-content:space-between;align-items:center;height:60px}
 nav b{font:700 18px "Space Grotesk",sans-serif}
@@ -13,7 +13,7 @@ nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;align-items:cent
 nav a{text-decoration:none;font-size:15px;font-weight:600}nav a:hover{color:var(--acc)}
 nav button{font:inherit;font-size:14px;background:none;color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:3px 12px;cursor:pointer}
 @media(max-width:760px){nav li.l{display:none}}
-.hero{padding:88px 0 64px}
+.hero{padding:88px 25px 64px}
 .hero h1{font-size:clamp(2.8rem,9vw,6.5rem);font-weight:700;letter-spacing:-.035em}
 .hero h2{font-size:clamp(1.1rem,2.6vw,1.6rem);font-weight:500;color:var(--acc);margin:14px 0 22px}
 .hero p{max-width:34em;font-size:1.2rem;color:var(--mut);margin:0 0 14px}
@@ -61,3 +61,6 @@ video::-webkit-media-controls-volume-slider,
 video::-webkit-media-controls-volume-control-container {
   display: none;
 }
+.hero{position:relative}
+.hero-anim{position:absolute;right:24px;top:48px;width:38%;height:calc(100% - 96px);pointer-events:none}
+@media(max-width:900px){.hero-anim{display:none}}

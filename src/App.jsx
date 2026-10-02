@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { profile, skills, projects, experience, education } from "./data.js";
-
+import HeroAnimation from "./HeroAnimation.jsx";
 const Chips = ({ items }) => (
   <div className="ch">{items.map((x) => <span key={x}>{x}</span>)}</div>
 );
@@ -25,6 +25,7 @@ function Header({ theme, toggle }) {
 function Hero() {
   return (
     <div className="w hero" id="home">
+      <HeroAnimation />
       <h1>{profile.name}</h1>
       <h2>{profile.title}</h2>
       <p>{profile.intro}</p>
@@ -122,9 +123,12 @@ export default function App() {
           <div className="pj">{projects.map((p) => <ProjectCard key={p.title} p={p} onZoom={setZoom} />)}</div>
         </Section>
         <Section id="experience" title="Experience">
+          <HeroAnimation />
           <ol className="tl">
             {experience.map((e) => (
+              
               <li key={e.company}>
+                <HeroAnimation />
                 <time>{e.year}</time><h3>{e.company}</h3><p>{e.role}</p>
                 <ul>{e.missions.map((m) => <li key={m}>{m}</li>)}</ul>
                 <p><small>Technologies: {e.tech}</small></p>

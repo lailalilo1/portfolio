@@ -11,7 +11,7 @@ export const profile = {
     "Through my studies and internships, I have worked on Machine Learning, Data Engineering, Computer Vision, data analysis and Business Intelligence projects.",
     "I am currently looking for a PFE internship starting in January/February 2027, to apply my skills and contribute to Data/AI projects.",
   ],
-  info: ["📍 Agadir, Morocco", "🎓 ENSA Agadir", "💼 5th-year engineering student", "🎯 PFE — January/February 2027"],
+  info: [" Agadir, Morocco", " ENSA Agadir", " 5th-year engineering student", " PFE — January/February 2027"],
   email: "lailaililou0@gmail.com",
   linkedin: "https://www.linkedin.com/in/laila-ilillou-025b4831a",
   github: "", // ajoute ton lien GitHub ici quand tu en auras un
@@ -30,7 +30,7 @@ export const skills = {
 // demo / video / code : liens externes (laisse "" si aucun)
 export const projects = [
   {
-    icon: "🍅", title: "Tomato Disease Detection",
+    icon:"" ,title: "Tomato Disease Detection",
     kind: "Computer Vision | YOLOv8 | Python",
     desc: "Automatic detection of tomato diseases from images. Classes: Anthracnose, Blossom End Rot, Healthy Tomato, Spotted Wilt Virus.",
     tech: ["YOLOv8", "Computer Vision", "Python", "Roboflow"],
@@ -38,7 +38,7 @@ export const projects = [
     imgs: [], videos: ["images/Final_Demo_Tomato_Detection.mp4"], demo: "", video: "", code: "",
   },
   {
-    icon: "💳", title: "Credit Card Fraud Detection",
+    icon: "", title: "Credit Card Fraud Detection",
     kind: "Machine Learning | Python | Flask | Scikit-learn",
     desc: "Web application that detects potentially fraudulent bank transactions.",
     tech: ["Python", "Pandas", "Scikit-learn", "Flask", "Machine Learning"],
@@ -46,7 +46,7 @@ export const projects = [
     imgs: [], videos: ["images/FDCB.mp4"], demo: "", video: "", code: "",
   },
   {
-    icon: "💊", title: "Medicine Price Analysis",
+    icon: "", title: "Medicine Price Analysis",
     kind: "Web Scraping | Data Analysis | Flask",
     desc: "Collection and analysis of medicine prices across different countries.",
     tech: ["Scrapy", "Python", "Pandas", "SQLite", "Flask", "Plotly"],
@@ -54,7 +54,7 @@ export const projects = [
     imgs: [], videos: ["images/medicaments.mp4"], demo: "", video: "", code: "",
   },
   {
-    icon: "📊", title: "Data Platform — STAR Aït Melloul",
+    icon: "", title: "Data Platform — STAR Aït Melloul",
     kind: "Data Engineering | BI | Machine Learning",
     desc: "Design of a data platform that centralizes sales data and produces analyses and forecasts.",
     note: "Design and simulation project: the data used is simulated, not real confidential STAR data.",
